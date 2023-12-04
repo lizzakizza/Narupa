@@ -1,0 +1,16 @@
+Heating of system for 2 ns without restraints
+ &cntrl
+  imin = 0, nstlim = 1000000, dt = 0.002,
+  irest = 0, ntx = 1, ig = -1,
+  tempi = 100.0, temp0 = 300.0,
+  ntc = 2, ntf = 2, tol = 0.00001, ! SHAKE on for bonds with hydrogen ! No force evaluation for bonds with hydrogen ! SHAKE tolerance
+  ntwx = 10000, ntwe = 0, ntwr = 1000, ntpr = 1000,
+  cut = 10.0, iwrap = 0, !Coordinates written to the restart and trajectory files won’t be "wrapped" into a primary box.
+  ntt =3, gamma_ln=1., ntb = 1, ntp = 0,
+  nscm = 0, ! Don’t remove translational and rotational center-of-mass (COM) motion after every nscm steps
+  nmropt=1,
+  ioutfm=1, ntxo=2,
+ /
+&wt TYPE="TEMP0", istep1=0, istep2=1000000, value1=100.0, value2=300, /
+&wt TYPE="END", /
+

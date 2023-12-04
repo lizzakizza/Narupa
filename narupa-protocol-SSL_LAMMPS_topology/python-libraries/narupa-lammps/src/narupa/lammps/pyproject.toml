@@ -1,0 +1,2 @@
+ld-system]
+requires = ["setuptools", "wheel", "Cython"]

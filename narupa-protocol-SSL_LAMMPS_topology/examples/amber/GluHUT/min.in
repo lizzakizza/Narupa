@@ -1,0 +1,10 @@
+Minimization of system without restraints
+&cntrl
+imin = 1, maxcyc = 10000,   
+ncyc = 500, ntx = 1,                     
+ntwe = 0, ntwr = 500, ntpr = 50,
+ntc = 2, ntf = 2, ntb = 1, ntp = 0,
+cut = 10.0,   
+ioutfm=1, ntxo=2,
+/
+
